@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class PostsUpdateRequestDto {       // 클라이언트로부터 전달받은 요청 데이터를 담고 있는 객체
-    private String title;
+    private String title;                  // 필드(변수 집합) 선언
     private String content;
 
     @Builder
-    public PostsUpdateRequestDto(String title, String content) {
+    public PostsUpdateRequestDto(String title, String content) {       // 생성자(인스턴스 초기화 메서드) 선언 : 엔터티 객체들을 초기화해서 저장
         this.title = title;
         this.content = content;
     }

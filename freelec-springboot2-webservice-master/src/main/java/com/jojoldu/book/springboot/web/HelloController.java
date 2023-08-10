@@ -14,8 +14,8 @@ public class HelloController {
     }
 
     @GetMapping("/hello/dto")
-    public HelloResponseDto helloDto(@RequestParam("name") String name,     // "name"이라는 이름으로 name변수의 값을 받아 옴
-                                     @RequestParam("amount") int amount) {  // "amount"라는 이름으로 amount변수의 값을 받아 옴
+    public HelloResponseDto helloDto(@RequestParam("name") String name,     // "name"이라는 이름으로 name 변수의 값을 받아 옴
+                                     @RequestParam("amount") int amount) {  // "amount"라는 이름으로 amount 변수의 값을 받아 옴
         return new HelloResponseDto(name, amount);
     }
 

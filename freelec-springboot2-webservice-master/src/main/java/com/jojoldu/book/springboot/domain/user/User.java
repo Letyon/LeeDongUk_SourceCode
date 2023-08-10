@@ -31,19 +31,19 @@ public class User extends BaseTimeEntity {
     @Column
     private String picture;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)                        // enum 이름을 DB에 저장
     @Column(nullable = false)
     private Role role;
 
     @Builder
-    public User(String name, String email, String picture, Role role) {
+    public User(String name, String email, String picture, Role role) {        // 생성자(인스턴스 초기화 메서드) 선언 : 엔터티 객체들을 초기화해서 저장
         this.name = name;
         this.email = email;
         this.picture = picture;
         this.role = role;
     }
 
-    public User update(String name, String picture) {
+    public User update(String name, String picture) {                   // 업데이트(정보 수정 메서드) 선언 : 수정된 엔터티 객체들을 반환
         this.name = name;
         this.picture = picture;
 
