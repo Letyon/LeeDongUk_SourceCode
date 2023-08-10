@@ -19,7 +19,7 @@ public class PostsSaveRequestDto {      // 클라이언트로부터 전달받은
         this.author = author;
     }
 
-    public Posts toEntity() {      // 엔터티(Entity 으로 변환하는 메서드) 선언 : 엔터티 객체들을 반환
+    public Posts toEntity() {      // 엔터티(Entity 으로 변환하는 메서드) 선언 : 엔터티 객체들을 리턴
         return Posts.builder()
                 .title(title)
                 .content(content)
