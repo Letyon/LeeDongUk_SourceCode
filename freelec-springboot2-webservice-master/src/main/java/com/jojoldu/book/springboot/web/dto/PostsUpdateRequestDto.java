@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-public class PostsUpdateRequestDto {       // 클라이언트로부터 전달받은 요청 데이터를 담고 있는 객체
+public class PostsUpdateRequestDto {       // 클라이언트의 요청 데이터를 entity 로 보냄
     private String title;                  // 필드(변수 집합) 선언
     private String content;
 

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-public class PostsSaveRequestDto {      // 클라이언트로부터 전달받은 요청 데이터를 담고 있는 객체
+public class PostsSaveRequestDto {      // 클라이언트의 요청 데이터를 entity 로 보냄
     private String title;               // 필드(변수 집합) 선언
     private String content;
     private String author;
@@ -19,7 +19,7 @@ public class PostsSaveRequestDto {      // 클라이언트로부터 전달받은
         this.author = author;
     }
 
-    public Posts toEntity() {      // 엔터티(Entity 으로 변환하는 메서드) 선언 : 엔터티 객체들을 리턴
+    public Posts toEntity() {      // (Entity 으로 변환하는) 메서드 선언 : 엔터티 객체들을 리턴
         return Posts.builder()
                 .title(title)
                 .content(content)

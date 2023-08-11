@@ -43,7 +43,7 @@ public class User extends BaseTimeEntity {
         this.role = role;
     }
 
-    public User update(String name, String picture) {                   // 업데이트(정보 수정 메서드) 선언 : 수정된 엔터티 객체들을 반환
+    public User update(String name, String picture) {                   // 업데이트(정보 수정 메서드) 선언 : 수정된 엔터티 객체들을 리턴
         this.name = name;
         this.picture = picture;
 

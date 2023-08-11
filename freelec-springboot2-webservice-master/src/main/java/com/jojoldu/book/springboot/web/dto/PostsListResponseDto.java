@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.time.LocalDateTime;
 
 @Getter
-public class PostsListResponseDto {                   // 비즈니스 로직에서 생성된 데이터를 클라이언트에 리턴
+public class PostsListResponseDto {                   // 클라이언트의 요청 데이터를 entity 에서 가져옴
     private Long id;                                  // 필드(변수 집합) 선언
     private String title;
     private String author;
