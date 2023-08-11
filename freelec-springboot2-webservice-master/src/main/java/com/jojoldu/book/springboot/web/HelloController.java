@@ -13,10 +13,11 @@ public class HelloController {
         return "hello";
     }
 
-    @GetMapping("/hello/dto")
+    @GetMapping("/hello/dto")                                               // helloDto() 메서드
     public HelloResponseDto helloDto(@RequestParam("name") String name,     // "name"이라는 이름으로 name 변수의 값을 받아 옴
                                      @RequestParam("amount") int amount) {  // "amount"라는 이름으로 amount 변수의 값을 받아 옴
-        return new HelloResponseDto(name, amount);
+
+        return new HelloResponseDto(name, amount);                   // name 변수, amount 변수 의 값 리턴
     }
 
 }

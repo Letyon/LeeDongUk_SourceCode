@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller                              // view를 반환하기 위해 사용하는 어노테이션
 public class IndexController {          // Controller 클래스(클라이언트 요청에 대한 서비스의 응답)
 
-    private final PostsService postsService;   // 접근제한자(private) 자료형(final) 클래스(PostsService) 변수명(postsService)
+    private final PostsService postsService;   // 서비스 주입 : 접근제한자(private) 자료형(final) 클래스(PostsService) 변수명(postsService)
 
     @GetMapping("/")
     public String index(Model model, @LoginUser SessionUser user) {           // Model(객체), @LoginUser(로그인 유저를 지칭하는 어노테이션)
